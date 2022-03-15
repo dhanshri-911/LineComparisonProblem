@@ -38,10 +38,23 @@ public class LineComparison {
         l2.p1 = p3;
         l2.p2 = p4;
         //Calculate length of lines
-        l1.length = (Double) l1.getLineLength();
-        l2.length = (Double) l2.getLineLength();
+        l1.length = (Double)l1.getLineLength();
+        l2.length =  (Double)l2.getLineLength();
         //Print length of lines
         System.out.println("Line 1 = " + l1.length);
-        System.out.println("Line 2 = " + l2.length);     
-	}
-}
+        System.out.println("Line 2 = " + l2.length);
+        
+        if(Double.compare(l1.length, l2.length) ==0){
+         
+            System.out.println("Both lines L1 and L2 are equal.");
+            }
+        else if(Double.compare(l1.length, l2.length) < 0)
+        
+            System.out.println("Line L1 is greater than Line L2.");
+        
+        else  {
+            System.out.println("Line L1 is less than Line L2.");
+        }
+    }
+       
+        	}
